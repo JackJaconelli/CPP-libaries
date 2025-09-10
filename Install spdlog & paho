@@ -1,0 +1,38 @@
+ 
+Windows:
+ 
+
+ 
+
+CMAKE 
+Download CMake: https://cmake.org/download/ 
+
+VCPKG: 
+git clone https://github.com/microsoft/vcpkg.git 
+cd vcpkg 
+bootstrap-vcpkg.bat 
+
+
+Insert system variables:
+C:\Users\JackJaconelli\vcpkg
+
+
+Install spdlog: 
+vcpkg install spdlog 
+vcpkg integrate install 
+
+Paho libaries: 
+vcpkg install paho-mqttpp3:x64-windows 
+vcpkg install paho-mqtt:x64-windows 
+vcpkg integrate install 
+ 
+
+Install vcpkg part2: 
+Cd C:\Users\JackJaconelli\vcpkg 
+bootstrap-vcpkg.bat 
+vcpkg install spdlog:x64-windows 
+vcpkg install paho-mqtt:x64-windows 
+vcpkg install paho-mqttpp3:x64-windows 
+vcpkg integrate install 
+
+ 
